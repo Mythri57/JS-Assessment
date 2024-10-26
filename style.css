@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+h1{
+  background-color: rgb(255, 233, 233);
+  padding: 10px;
+  
+}
+
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  padding: 20px;
+  
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: rgb(255, 233, 233);
+  
+}
+#search {
+  padding: 10px;
+
+
+}
+
+
+#card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+.card:hover{
+  background-color: rgb(255, 233, 233);
+
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  font-size: 1.25rem;
+}
+
+.card p {
+  margin: 5px 0;
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  #card-container {
+      grid-template-columns: 1fr;
+  }
+}
